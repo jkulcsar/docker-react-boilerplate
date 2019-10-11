@@ -6,5 +6,5 @@ services:
 before_install:
   - docker build -t jkulcsar/docker-react-boilerplate -f Dockerfile.dev .
 
-  script:
+script:
   - docker run -e CI=true jkulcsar/docker-react-boilerplate npm run test
